@@ -1,0 +1,253 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "option",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeSpan",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAllBet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HelloWorld.Bet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllPlayers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HelloWorld.Bet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "getBet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct HelloWorld.Bet",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_betNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_betprice",
+						"type": "uint256"
+					}
+				],
+				"name": "updatebalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/HelloWorld.sol": "HelloWorld"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/HelloWorld.sol": {
+			"keccak256": "0x621729216147ec47623bb407a9152cae112c1b3dea01b97f4e33e2546869dc3d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://4457fffdd6413537f2e5040da3f480855d12908462422502a18468df901e8e09",
+				"dweb:/ipfs/Qmd9CkF3CmRfFzpN5B33oCP4B7ALXu5J6XwmSbQ4f2D7Sv"
+			]
+		}
+	},
+	"version": 1
+}

@@ -1,0 +1,253 @@
+{
+	"compiler": {
+		"version": "0.8.26+commit.8a97fa7a"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "Balance",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "bets",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "id",
+						"type": "uint256"
+					},
+					{
+						"internalType": "address",
+						"name": "owner",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "option",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "timeSpan",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "betPrice",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "_owner",
+						"type": "address"
+					}
+				],
+				"name": "getAllBet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DGameApp.Bet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "getAllPlayers",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DGameApp.Bet[]",
+						"name": "",
+						"type": "tuple[]"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_i",
+						"type": "uint256"
+					}
+				],
+				"name": "getBet",
+				"outputs": [
+					{
+						"components": [
+							{
+								"internalType": "uint256",
+								"name": "id",
+								"type": "uint256"
+							},
+							{
+								"internalType": "address",
+								"name": "owner",
+								"type": "address"
+							},
+							{
+								"internalType": "uint256",
+								"name": "option",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "timeSpan",
+								"type": "uint256"
+							},
+							{
+								"internalType": "uint256",
+								"name": "betPrice",
+								"type": "uint256"
+							}
+						],
+						"internalType": "struct DGameApp.Bet",
+						"name": "",
+						"type": "tuple"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_betNumber",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_betprice",
+						"type": "uint256"
+					}
+				],
+				"name": "updatebalance",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/DGameApp.sol": "DGameApp"
+		},
+		"evmVersion": "cancun",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/DGameApp.sol": {
+			"keccak256": "0xda59cf5d5c8bda88a119693025cb9287d56564d7f63d86cad0069bd6a6f39b7e",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://cc45f63fe47b46dbf9f87b620c6714b38875a15e5fd05de9ebbf280eefc70b26",
+				"dweb:/ipfs/QmVsbrPasirB9UvMQnLyYX7R1WhezEjVuJ19pb9jqwKK72"
+			]
+		}
+	},
+	"version": 1
+}
